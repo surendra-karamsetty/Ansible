@@ -9,9 +9,9 @@
       MONTHS: 4
       TRAINER: "Surendra"
     TOPICS: #list -/[]
-    -LINUX
-    -UNIX
-    -AWS
+    - LINUX
+    - UNIX
+    - AWS
   task: 
   -name: print variables
     ansible.builtin.debug:
