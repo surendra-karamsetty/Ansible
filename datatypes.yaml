@@ -13,7 +13,7 @@
     - UNIX
     - AWS
   task: 
-  -name: print variables
+  - name: print variables
     ansible.builtin.debug:
       msg: |
         PROGRAM: {{ PROGRAM }}
