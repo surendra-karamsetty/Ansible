@@ -1,0 +1,10 @@
+- name: play leven variables
+  hosts: local
+  connection: local
+  vars: #this is variables what ever you are writing here you can call that variables when ever it is required.
+    COURSE: "Devsecops"
+    TRAINNER: "SURENDRA"
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Course: {{ COURSE }}, Trainer : {{ TRAINER }}"
