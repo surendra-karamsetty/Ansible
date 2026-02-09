@@ -1,0 +1,9 @@
+- name: play leven variables
+  hosts: local
+  connection: local
+  vars_files: #here we are calling the course.yaml file here 
+  - course.yaml
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Course: {{ COURSE }}, Trainer : {{ TRAINER }}"
