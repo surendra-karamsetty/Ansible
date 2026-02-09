@@ -13,3 +13,9 @@
         name: nginx
         state: started
 
+    - name: Status nginx
+      ansible.builtin.service:
+        name: nginx
+        state: Status
+
+
